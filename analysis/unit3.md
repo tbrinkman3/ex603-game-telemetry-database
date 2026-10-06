@@ -1,0 +1,3 @@
+The original dashboard was that was supposed to return the number of players that did not experience a match that had a player drop due to network timeout, originally returned the wrong results because it only returned users that had a player disconnect due to a reason that was not a network timeout.  Those players who were in matches that experienced no player disconnects were not included in the restults.
+
+This presented a very large gap, 22 from the incorrect count versus 188 from the corrected.  The query was adjusted to account for players who experienced no network issues during their match.  Now that the count is adjusted for matches and participants in those valid matches, the payout in experience points can be appropriatley added to the players accounts.
